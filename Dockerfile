@@ -6,4 +6,4 @@ RUN gosu elasticsearch bin/plugin install royrusso/elasticsearch-HQ
 RUN gosu elasticsearch bin/plugin install polyfractal/elasticsearch-inquisitor
 RUN gosu elasticsearch bin/plugin install mobz/elasticsearch-head
 WORKDIR ${KIBANA_HOME}
-RUN gosu elasticsearch bin/plugin install elastic/sense
+RUN gosu kibana bin/kibana plugin --install elastic/sense
